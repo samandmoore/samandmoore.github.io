@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+  <url>
+    <loc>http://samandmoore.com/blog/2013/08/25/new-direction-betterment/</loc>
+    <lastmod>2013-08-25T22:43:39-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://samandmoore.com/blog/2013/06/03/switched-my-dns-to-dnsimple/</loc>
+    <lastmod>2013-06-03T22:43:39-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://samandmoore.com/blog/2013/05/23/lauras-broken-ankle/</loc>
+    <lastmod>2013-05-23T22:43:39-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  <url>
+    <loc>http://samandmoore.com/blog/archives/</loc>
+    <lastmod>2014-07-20T23:04:43-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://samandmoore.com/</loc>
+    <lastmod>2014-07-20T23:04:43-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://samandmoore.com/about/</loc>
+    <lastmod>2014-07-20T23:04:43-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+</urlset>
