@@ -1,0 +1,12 @@
+title: Sam Moore
+email: me@samandmoore.com
+description: >
+  Software sorcerer. Dog devotee. Food fanatic.
+baseurl: ""
+url: "http://samandmoore.com"
+twitter_username: samandmoore
+github_username:  samandmoore
+
+markdown: kramdown
+
+google_analytics_tracking_id: UA-22795654-1
