@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://samandmoore.com/sitemap.xml 

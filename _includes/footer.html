@@ -1,0 +1,17 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    <center>
+      <p>&copy; {{ site.time | date: '%Y' }} Sam Moore</p>
+      <p>
+        <a href="https://github.com/samandmoore/samandmoore.com">
+          <span class="icon icon--github">{% include icon-github.svg %}</span>
+          source
+        </a>
+        /
+        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+        /
+        <a href="{{ '/archive' | prepend: site.baseurl }}">Archive</a>
+      </p>
+    </center>
+  </div>
+</footer>

@@ -1,0 +1,14 @@
+.home {
+  .hero {
+    @extend %clearfix;
+    .me {
+      float: left;
+      margin: 0 24px 0 0;
+      border: 4px dotted $brand-color;
+      border-radius: 15px;
+    }
+  }
+
+  .huge {
+  }
+}
