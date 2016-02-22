@@ -14,4 +14,15 @@ markdown: kramdown
 
 google_analytics_tracking_id: UA-22795654-1
 
-exclude: [vendor, Gemfile, Gemfile.lock]
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+
+jekyll-archives:
+  enabled:
+    - tags
+  layouts:
+    tag: tag
+  permalinks:
+    tag: '/tags/:name/'

@@ -5,6 +5,7 @@ date: 2013-08-25 22:43:39 -0400
 tags:
   - life
   - work
+  - software
 ---
 
 After the demise of Group Commerce, I went on the hunt to find a new start-up job. I found Betterment, and I couldn't be happier.

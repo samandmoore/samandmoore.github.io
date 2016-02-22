@@ -2,8 +2,10 @@
 layout: default
 ---
 
+<h1>Tagged with: '{{ page.title }}'</h1>
+
 <div id="blog-archives">
-  {% for post in site.posts reverse %}
+  {% for post in page.posts reverse %}
     {% include archive-entry.html %}
   {% endfor %}
 </div>
