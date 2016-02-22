@@ -2,7 +2,9 @@
 layout: post
 title: "switched my DNS to DNSimple"
 date: 2013-06-03 22:43:39 -0400
-categories: web, hosting
+tags:
+  - web
+  - hosting
 ---
 
 I decided to drop dreamhost and switch to DNSimple for registering and configuring the DNS for my websites. The price is right and the UX is super smooth.

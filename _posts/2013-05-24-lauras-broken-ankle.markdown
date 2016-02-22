@@ -2,7 +2,8 @@
 layout: post
 title: "Laura's broken ankle"
 date: 2013-05-23 22:43:39 -0400
-categories: life
+tags:
+  - life
 ---
 
 Sadly, last night Laura broke her ankle. She was taking out the garbage when everything went wrong.
