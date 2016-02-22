@@ -3,19 +3,43 @@ layout: default
 ---
 
 <div class="home">
+  <div class="hero">
+    <img class="me" src="https://s.gravatar.com/avatar/d379fa277879875cb280782165cf3bbc?s=180" width="90" alt="Sam Moore" />
+    <p>
+      {{ site.description }}
+    </p>
+  </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+  <p class="huge">
+    I love <a href="https://google.com/search?q=dogs">dogs</a>.
+  </p>
 
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      </li>
-    {% endfor %}
-  </ul>
+  <p class="huge">
+    I write <a href="https://github.com/samandmoore">software</a>.
+  </p>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="huge">
+    I <a href="https://twitter.com/samandmoore">tweet</a>.
+  </p>
 
+  <p class="huge">
+    I communicate via email at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+  </p>
+
+  <p class="huge">
+    I live in <a href="https://google.com/search?q=Queens%2C+NY">Queens</a> with my fiancé Laura.
+  </p>
+
+  <p class="huge">
+    I occasionally record my musings about <a href="{{ '/archive' | prepend: site.baseurl }}">life</a>,
+    <a href="{{ '/archive' | prepend: site.baseurl }}">software</a>,
+    and <a href="{{ '/archive' | prepend: site.baseurl }}">whatever else</a>.
+  </p>
+
+  <p>
+    I have an unusual affection for American history, Gnomes, and
+    the Lord of the Rings. I enjoy music, particularly classic
+    R&amp;B, Soul, 60s &amp; 70s rock music, and modern artists
+    influenced by those genres.
+  </p>
 </div>
