@@ -13,3 +13,5 @@ github_username:  samandmoore
 markdown: kramdown
 
 google_analytics_tracking_id: UA-22795654-1
+
+exclude: [vendor, Gemfile, Gemfile.lock]
