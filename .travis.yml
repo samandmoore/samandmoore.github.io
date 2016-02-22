@@ -1,6 +1,7 @@
 language: ruby
 rvm:
 - 2.3.0
+script: bundle exec jekyll build --trace
 deploy:
   provider: s3
   access_key_id: AKIAI2MVUILBEX3QDVFQ
