@@ -1,20 +1,34 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   {% include head.html %}
 
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+  <body class="Site">
+    <header class="Site-header">
+      <div class="Header">
+        <h1 class="Header-title">
+          <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+        </h1>
       </div>
+    </header>
+
+    <div class="Site-content">
+      {{ content }}
     </div>
 
-    {% include footer.html %}
-
+    <footer class="Site-footer">
+      <div class="Footer">
+        <p class="Footer-copyright">&copy; {{ site.time | date: '%Y' }} Sam Moore</p>
+        <p class="Footer-links">
+          <a href="https://github.com/samandmoore/samandmoore.com">
+            <span class="Icon Icon--github">{% include icon-github.svg %}</span>
+            source
+          </a>
+          /
+          <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+          /
+          <a href="{{ '/archive.html' | prepend: site.baseurl }}">Archive</a>
+        </p>
+      </div>
+    </footer>
   </body>
-
 </html>

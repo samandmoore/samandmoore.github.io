@@ -8,7 +8,7 @@ deploy:
   secret_access_key:
     secure: IKRrmk1H5suJC85bchr3Q6UC8bw5KO9CMLrese9uoShRkuxqbYPIL3QsWgI2hScl8+1Pnza9Z5bp03ZzmEXVClYkXu2vGV19+FZ6gEwxaZKW9GTr3g851vOZGW3oJYUT7hUHow9AQI6aJMp9cDQ/yHvLfQJhEoeoJYu+VDLkRw0=
   bucket: samandmoore.com
-  local_dir: _site
+  local_dir: _deploy
   skip_cleanup: true
   acl: public_read
   on:

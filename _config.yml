@@ -19,6 +19,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - bin
+
+destination: _deploy
 
 jekyll-archives:
   enabled:

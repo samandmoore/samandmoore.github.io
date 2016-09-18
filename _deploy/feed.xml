@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sam &amp; Moore</title>
+    <description>Hi there! This is the personal website of yours truly, Sam Moore. I am a software engineer living and working in New York City. I spend my free time reading and contemplating how to be better at writing software and mentoring other engineers.
+</description>
+    <link>http://samandmoore.com/</link>
+    <atom:link href="http://samandmoore.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 18 Sep 2016 14:51:30 -0400</pubDate>
+    <lastBuildDate>Sun, 18 Sep 2016 14:51:30 -0400</lastBuildDate>
+    <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>New Direction, Betterment</title>
+        <description>&lt;p&gt;After the demise of Group Commerce, I went on the hunt to find a new start-up job. I found Betterment, and I couldn’t be happier.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;So it’s been a while since I’ve posted anything substantial about myself. In June, my employer, Group Commerce, fail-merged (the market dried up and they merged with a competitior), and they decided to let nearly everyone go. Before everything collapsed, there were internal whisperings of what was going to happen, so I started looking for a new place to work. Having realized that working in the start-up space was a good fit for me, I focused my search in that sector of the job market.&lt;/p&gt;
+
+&lt;p&gt;I found a few companies that I was interested in, and I began frantically prepping for interviews by asking basically every smart person I knew to quiz me. After talking to a few places, I decided to check out &lt;a href=&quot;https://www.betterment.com&quot;&gt;Betterment&lt;/a&gt;. I heard about it about a month earlier from a good friend that I worked with at Group Commerce. Betterment provides a personal finance tool for investing one’s money in the simplest, most elegant way possible. Elevator pitch: Sign up online; link your checking account; create a goal for what you might want to do with your money in x years; set up automatic deposts; and you’re invested in a diversified market portfolio. My friend happened to have already spoken to Betterment about a position, and was contemplating accepting it or one of a few other offers he had. He convinced me to go out for some drinks with the Engineering team and see what I thought, and boy am I glad that I did.&lt;/p&gt;
+
+&lt;p&gt;I went with some soon-to-be-former co-workers to meet the Betterment people for drinks, and I had the opportunity just talk shop a little bit. It was awesome to be able to meet with a group of possible future co-workers in a neutral environment before going in for an interview. It really removed a lot of the fear and uncertainty from the equation. I loved what I heard in conversations that night, and so I decided to schedule an interview.&lt;/p&gt;
+
+&lt;p&gt;The interview was a great experience. I spent a few hours at the Betterment office, and I met with 5 or so people. They all challenged me to prove how I would be a great fit for the company, and, as it turns out, I did a good enough job to earn myself an offer.&lt;/p&gt;
+
+&lt;p&gt;That all happened back in May. Since then, I’ve accepted, taken a month off the spend with my wonderful girlfriend, and started working there. I have to say, after working at Group Commerce, getting to know and love that environment, I am surprised at how much I love working at Betterment. I was hoping that it would be at least as good of an environment as Group Commerce, but it has proven to be even better. I am fortunate that in addition to myself, a group of other Group Commerce engineers also came along for the ride at Betterment. That undoubtedly has made the trasition to a new company easier, but I have already made some real friends at Betterment, and I continue to grow those relationships every day.&lt;/p&gt;
+
+&lt;p&gt;I could not be happier with where I’ve landed. Now I am doing everything in my power to make Betterment a hugely successful company…&lt;/p&gt;
+
+&lt;p&gt;… fingers crossed!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 25 Aug 2013 22:43:39 -0400</pubDate>
+        <link>http://samandmoore.com/2013/08/25/new-direction-betterment.html</link>
+        <guid isPermaLink="true">http://samandmoore.com/2013/08/25/new-direction-betterment.html</guid>
+        
+        <category>life</category>
+        
+        <category>work</category>
+        
+        <category>software</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>switched my DNS to DNSimple</title>
+        <description>&lt;p&gt;I decided to drop dreamhost and switch to DNSimple for registering and configuring the DNS for my websites. The price is right and the UX is super smooth.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Since I decided that I was going to move my blog to a simple static site generator
+instead of something complicated like rails, I also decided to check out hosting
+it somewhere that can handle the amount of traffic it receives… none. As such,
+I am going with a free account on heroku. We shall see how this experiment turns out.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;UPDATE 2016-02-21&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;It turned out great. I’m still loving this choice.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 03 Jun 2013 22:43:39 -0400</pubDate>
+        <link>http://samandmoore.com/2013/06/03/switched-my-dns-to-dnsimple.html</link>
+        <guid isPermaLink="true">http://samandmoore.com/2013/06/03/switched-my-dns-to-dnsimple.html</guid>
+        
+        <category>web</category>
+        
+        <category>hosting</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Laura&#39;s broken ankle</title>
+        <description>&lt;p&gt;Sadly, last night Laura broke her ankle. She was taking out the garbage when everything went wrong.
+She took one wrong step and it was game over for her evening and her ankles.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Laura broke her ankle :(&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;UPDATE 2016-02-21&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;She’s entirely back to normal :) It didn’t take 3 years, but I saw this
+post again and decided that it just sounded too grim.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 23 May 2013 22:43:39 -0400</pubDate>
+        <link>http://samandmoore.com/2013/05/23/lauras-broken-ankle.html</link>
+        <guid isPermaLink="true">http://samandmoore.com/2013/05/23/lauras-broken-ankle.html</guid>
+        
+        <category>life</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

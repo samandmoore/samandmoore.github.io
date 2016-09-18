@@ -2,44 +2,47 @@
 layout: default
 ---
 
-<div class="home">
-  <div class="hero">
-    <img class="me" src="https://s.gravatar.com/avatar/d379fa277879875cb280782165cf3bbc?s=180" width="90" alt="Sam Moore" />
-    <p>
+<div class="Media">
+  <img class="Media-figure Media-figure--decorated" src="https://s.gravatar.com/avatar/d379fa277879875cb280782165cf3bbc?s=180" width="90" alt="Sam Moore" />
+  <div class="Media-body">
+    <div>
       {{ site.description }}
-    </p>
+    </div>
+  </div>
+</div>
+
+<div class="Facts">
+  <div class="Facts-item">
+    <p>I love <a href="https://google.com/search?q=dogs">dogs</a>.</p>
   </div>
 
-  <p class="huge">
-    I love <a href="https://google.com/search?q=dogs">dogs</a>.
-  </p>
+  <div class="Facts-item">
+    <p>I write <a href="https://github.com/samandmoore">software</a>.</p>
+  </div>
 
-  <p class="huge">
-    I write <a href="https://github.com/samandmoore">software</a>.
-  </p>
+  <div class="Facts-item">
+    <p>I <a href="https://twitter.com/samandmoore">tweet</a>.</p>
+  </div>
 
-  <p class="huge">
-    I <a href="https://twitter.com/samandmoore">tweet</a>.
-  </p>
+  <div class="Facts-item">
+    <p>I communicate via email at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+  </div>
 
-  <p class="huge">
-    I communicate via email at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
-  </p>
+  <div class="Facts-item">
+    <p>I live in <a href="https://google.com/search?q=Queens%2C+NY">Queens</a> with my wife <a href="/images/laura-cienkowski.jpg">Laura</a.>.</p>
+  </div>
 
-  <p class="huge">
-    I live in <a href="https://google.com/search?q=Queens%2C+NY">Queens</a> with my fiancé Laura.
-  </p>
-
-  <p class="huge">
-    I occasionally record my musings about <a href="{{ '/tags/life/' | prepend: site.baseurl }}">life</a>,
+  <div class="Facts-item">
+    <p>I occasionally record my musings about <a href="{{ '/tags/life/' | prepend: site.baseurl }}">life</a>,
     <a href="{{ '/tags/software/' | prepend: site.baseurl }}">software</a>,
-    and <a href="{{ '/archive.html' | prepend: site.baseurl }}">whatever else</a>.
-  </p>
+    and <a href="{{ '/archive.html' | prepend: site.baseurl }}">whatever else</a>.</p>
+  </div>
 
-  <p>
+  <div class="Facts-item Facts-item--bottom">
     I have an unusual affection for American history, Gnomes, and
     the Lord of the Rings. I enjoy music, particularly classic
-    R&amp;B, Soul, 60s &amp; 70s rock music, and modern artists
+    R&amp;B, Soul, 60s &amp; 70s rock, Hip-Hop, and modern artists
     influenced by those genres.
-  </p>
+  </div>
 </div>
+
