@@ -18,6 +18,7 @@ exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
+  - README.md
 
 jekyll-archives:
   enabled:
