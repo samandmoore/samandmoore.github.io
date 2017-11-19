@@ -20,13 +20,6 @@ exclude:
   - Gemfile.lock
   - README.md
   - bin
+  - Rakefile
 
 destination: _site
-
-jekyll-archives:
-  enabled:
-    - tags
-  layouts:
-    tag: tag
-  permalinks:
-    tag: '/tags/:name/'

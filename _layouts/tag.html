@@ -5,7 +5,9 @@ layout: default
 <h1>Tagged with: '{{ page.title }}'</h1>
 
 <div id="blog-archives">
-  {% for post in page.posts reverse %}
-    {% include archive-entry.html %}
+  {% for post in site.posts %}
+    {% if post.tags contains page.tag %}
+      {% include archive-entry.html %}
+    {% endif %}
   {% endfor %}
 </div>
