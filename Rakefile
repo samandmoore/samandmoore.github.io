@@ -20,15 +20,15 @@ module TagGenerator
     File.open(taglist_path, 'r') do |f|
       while tag = f.gets
         tag = tag.strip
-        tags << tag unless tag == "" || tag == "\n"
+        tags += [tag] unless tag == "" || tag == "\n"
       end
     end
 
     # Create template files for each tag
     for tag in tags
-      tag_path = tag.downcase.gsub!(' ','-')
-      tag_page_path = tags_folder_path + "/#{tag_path}.md"
-      write_template_file(tag_page_path, "tags/#{tag_path}/", tag, { tag: tag })
+      tagpath = tag.include?(' ') ? tag.downcase.gsub!(' ','-') : tag.downcase
+      tagpage_path = tags_folder_path + "/#{tagpath}.md"
+      write_template_file(tagpage_path, "tags/#{tagpath}/", tag, {tag: tag})
     end
   end
 
