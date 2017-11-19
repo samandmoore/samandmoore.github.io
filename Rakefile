@@ -25,7 +25,7 @@ module TagGenerator
     end
 
     # Create template files for each tag
-    for tag in tags
+    tags.each do |tag|
       tagpath = tag.include?(' ') ? tag.downcase.gsub!(' ','-') : tag.downcase
       tagpage_path = tags_folder_path + "/#{tagpath}.md"
       write_template_file(tagpage_path, "tags/#{tagpath}/", tag, {tag: tag})
