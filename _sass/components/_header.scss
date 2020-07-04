@@ -1,4 +1,4 @@
-$title-font-family: 'Fredericka the Great', cursive;
+$title-font-family: 'Nothing You Could Do', cursive;
 
 .Header {
   &-title {
@@ -6,5 +6,9 @@ $title-font-family: 'Fredericka the Great', cursive;
     text-align: center;
     font-size: 4em;
     margin: 0.25em 0;
+
+    a {
+      border: none;
+    }
   }
 }

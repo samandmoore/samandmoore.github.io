@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "switched my DNS to DNSimple"
+title: "Switched my DNS to DNSimple"
 date: 2013-06-03 22:43:39 -0400
 tags:
   - web
