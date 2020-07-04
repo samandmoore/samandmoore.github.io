@@ -4,17 +4,21 @@
   margin-bottom: 1em;
 
   &-figure {
-    margin-right: 1em;
     &--decorated {
       border: 0.25em dotted $brand-color;
     }
   }
 
   &-body {
+    margin-left: 1em;
     flex: 1;
   }
 
   &-title {
     margin: 0em 0em 0.5em;
+  }
+
+  &-link {
+    border: none;
   }
 }
