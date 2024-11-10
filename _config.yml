@@ -1,13 +1,13 @@
 title: "Sam & Moore"
 email: me@samandmoore.com
 description: >
-  Hi there! This is the personal website of Sam Moore. I am a software maker
-  living and working in New York City. I enjoy reading, cooking & making
-  cocktails with Laura, and playing with my doggo Hazel.
+  Hi there! This is the personal website of Sam Moore. I'm software maker
+  in New York City. I enjoy reading, cooking & making cocktails with my wife
+  Laura, playing with my doggo Hazel, and my kiddos.
 baseurl: ""
 url: "https://samandmoore.com"
 twitter_username: samandmoore
-github_username:  samandmoore
+github_username: samandmoore
 
 markdown: kramdown
 
