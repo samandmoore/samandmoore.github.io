@@ -1,25 +1,19 @@
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
 html {
   height: 100vh;
-  color: $text-color;
-  font-weight: $base-font-weight;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-  font-family: $base-font-family;
+  color: var(--text-color);
+  font-weight: var(--base-font-weight);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+  font-family: var(--base-font-family);
   text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight;
+  font-weight: var(--base-font-weight);
 }
 
 a {
-  color: $brand-color;
+  color: var(--brand-color);
 }
 
 p,
@@ -35,7 +29,7 @@ pre {
 code {
   font-size: .9em;
   font-weight: normal;
-  color: #000;
+  color: oklch(0% 0 0);
 }
 
 pre > code {
@@ -45,19 +39,19 @@ pre > code {
 
 a {
   display: inline-block;
-  border-bottom: 1px dashed rgba($brand-color, 50);
-  color: $brand-color;
+  border-bottom: 1px dashed oklch(from var(--brand-color) l c h / .5);
+  color: var(--brand-color);
   text-decoration: none;
 
   &:visited {
-    border-bottom: 1px solid $brand-color;
+    border-bottom: 1px solid var(--brand-color);
   }
 
   &:focus, &:hover {
     outline: none;
-    background-color: rgba($brand-color, 50);
+    background-color: var(--brand-color);
     transform: rotate(-3deg);
-    color: white;
+    color: oklch(100% 0 0);
   }
 }
 

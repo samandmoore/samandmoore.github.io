@@ -1,0 +1,21 @@
+@import url("reset.css") layer(reset);
+@import url("base.css") layer(base);
+@import url("components.css") layer(components);
+
+:root {
+  --base-font-family: 'Andika', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  --base-font-size: 18px;
+  --base-font-weight: 400;
+  --small-font-size: var(--base-font-size) * 0.875;
+
+  --base-line-height: 1.5;
+  --spacing-unit: 30px;
+
+  --text-color: oklch(37.15% 0 0);
+  --brand-color: oklch(70.56% 0.1342 158.32);
+
+  --breakpoint-medium: 800px;
+  --breakpoint-large: 'min-width: 1000px';
+  --breakpoint-huge: 'min-width: 1200px';
+}
+
