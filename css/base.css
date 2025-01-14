@@ -1,0 +1,75 @@
+html {
+  height: 100vh;
+  color: var(--text-color);
+  font-weight: var(--base-font-weight);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+  font-family: var(--base-font-family);
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--base-font-weight);
+}
+
+a {
+  color: var(--brand-color);
+}
+
+p,
+pre {
+  margin: 0 0 1.5em;
+}
+
+code,
+pre {
+  font-family: 'Menlo', 'Monaco', monospace;
+}
+
+code {
+  font-size: .9em;
+  font-weight: normal;
+  color: oklch(0% 0 0);
+}
+
+pre > code {
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  display: inline-block;
+  border-bottom: 1px dashed oklch(from var(--brand-color) l c h / .5);
+  color: var(--brand-color);
+  text-decoration: none;
+
+  &:visited {
+    border-bottom: 1px solid var(--brand-color);
+  }
+
+  &:focus, &:hover {
+    outline: none;
+    background-color: var(--brand-color);
+    transform: rotate(-3deg);
+    color: oklch(100% 0 0);
+  }
+}
+
+ol,
+ul {
+  list-style: square;
+  margin: 0 0 1.5em;
+  padding: 0 0 0 1.5em;
+}
+
+li {
+  margin-bottom: 0.333em;
+}
+
+figure {
+  margin: 0;
+}
+
+strong {
+  font-weight: 600;
+}
