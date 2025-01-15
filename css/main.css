@@ -13,9 +13,5 @@
 
   --text-color: oklch(37.15% 0 0);
   --brand-color: oklch(70.56% 0.1342 158.32);
-
-  --breakpoint-medium: 800px;
-  --breakpoint-large: 1000px;
-  --breakpoint-huge: 1200px;
 }
 
