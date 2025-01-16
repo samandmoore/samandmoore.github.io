@@ -2,12 +2,7 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-
-  @media (min-width: 800px) {
-    & {
-      align-items: center;
-    }
-  }
+  align-items: center;
 
   .Site-content {
     flex: 1;
@@ -21,42 +16,93 @@
   }
 
   .Site-header {
-    justify-content: center;
+  }
+
+  .Site-footer {
+    width: 80%;
+  }
+}
+
+.Header {
+  --title-font-family: 'Andika', cursive;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .Header-frame {
+    font-family: var(--title-font-family);
+    margin: 10px auto;
+    width: clamp(200px, 250px, 300px);
+    height: min-content;
+
+    .Header-title {
+      display: grid;
+      grid-template-areas:
+      'top right'
+      'bottom right';
+      color: var(--brand-color);
+      line-height: 1;
+
+      .amp {
+        display: block;
+        grid-area: right;
+        font-size: 2.4em;
+        text-align: left;
+        margin-inline-start: 10px;
+      }
+      .sam {
+        display: block;
+        grid-area: top;
+        text-align: right;
+        align-self: end;
+        line-height: 0.9em;
+      }
+      .moore {
+        align-self: start;
+        display: block;
+        grid-area: bottom;
+        text-align: right;
+        line-height: 0.9em;
+      }
+    }
+
+    .Header-subtitle {
+      margin 0;
+      text-align: center;
+      font-size: 1.2em;
+    }
   }
 }
 
 .Media {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 1em;
+  position: relative;
+  overflow: hidden;
+  width: 150px;
+  border-radius: 50%;
+  margin: 10px auto;
 
-  .Media-container {
-    position: relative;
-    overflow: hidden;
-    width: 120px;
-    border-radius: 50%;
+  &::after {
+    content: '';
+    background-image: url('https://s.gravatar.com/avatar/d379fa277879875cb280782165cf3bbc?s=180');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
 
-    &::after {
-      content: '';
-      background-image: url('https://s.gravatar.com/avatar/d379fa277879875cb280782165cf3bbc?s=180');
-      background-size: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+  &:hover::after {
+    opacity: 1;
+  }
+
+  &:hover {
+    .Media-figure {
       opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-
-    &:hover::after {
-      opacity: 1;
-    }
-
-    &:hover {
-      .Media-figure {
-        opacity: 0;
-      }
     }
   }
 
@@ -64,19 +110,6 @@
     width: 100%;
     height: 100%;
     transition: opacity 0.3s ease;
-
-    .Media-figure--decorated {
-      border: 0.25em dotted var(--brand-color);
-    }
-  }
-
-  .Media-body {
-    margin-left: 1em;
-    flex: 1;
-  }
-
-  .Media-title {
-    margin: 0em 0em 0.5em;
   }
 
   .Media-link {
@@ -90,47 +123,6 @@
   height: 16px;
 }
 
-.Header {
-  --title-font-family: 'Andika', cursive;
-
-  .Header-title {
-    font-family: var(--title-font-family);
-    margin: 10px auto;
-    width: min-content;
-    height: min-content;
-
-    a {
-      border: none;
-      padding: 0 5px;
-      display: grid;
-      grid-template-areas:
-      'left top'
-      'left bottom';
-    }
-
-    .amp {
-      display: block;
-      grid-area: left;
-      font-size: 2.4em;
-      text-align: right;
-    }
-    .sam {
-      display: block;
-      grid-area: top;
-      text-align: left;
-      align-self: end;
-      line-height: 0.9em;
-    }
-    .moore {
-      align-self: start;
-      display: block;
-      grid-area: bottom;
-      text-align: left;
-      line-height: 0.9em;
-    }
-  }
-}
-
 .Footer {
   border-top: 1px dashed oklch(from var(--brand-color) l c h / .5);
   text-align: center;
@@ -140,13 +132,5 @@
 .Facts {
   display: flex;
   flex-flow: row wrap;
-
-  .Facts-item {
-    margin: 0.5em;
-
-    .Facts-item--bottom {
-      flex: 0 0 calc(100% - 1em);
-    }
-  }
 }
 

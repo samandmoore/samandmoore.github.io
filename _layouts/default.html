@@ -5,19 +5,23 @@
   <body class="Site">
     <header class="Site-header">
       <div class="Header">
-        <h1 class="Header-title">
-          <a href="{{ site.baseurl }}/">
-            <span class="amp">&amp;</span>
+        <div class="Header-frame">
+          <h1 class="Header-title">
             <span class="sam">Sam</span>
             <span class="moore">Moore</span>
-          </a>
-        </h1>
+            <span class="amp">&amp;</span>
+          </h1>
+          <h2 class="Header-subtitle">Software Engineer</h2>
+        </div>
+        <div class="Media">
+          <img class="Media-figure Media-figure--decorated" src="images/sam.jpg" width="90" alt="Sam Moore" />
+        </div>
       </div>
     </header>
 
-    <div class="Site-content">
+    <main class="Site-content">
       {{ content }}
-    </div>
+    </main>
 
     <footer class="Site-footer">
       <div class="Footer">
