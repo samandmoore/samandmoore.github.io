@@ -15,7 +15,7 @@
 
     @media (min-width: 800px) {
       & {
-        max-width: 800px;
+        max-width: 720px;
       }
     }
   }
@@ -30,7 +30,41 @@
   align-items: flex-start;
   margin-bottom: 1em;
 
+  .Media-container {
+    position: relative;
+    overflow: hidden;
+    width: 120px;
+    border-radius: 50%;
+
+    &::after {
+      content: '';
+      background-image: url('https://s.gravatar.com/avatar/d379fa277879875cb280782165cf3bbc?s=180');
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+
+    &:hover {
+      .Media-figure {
+        opacity: 0;
+      }
+    }
+  }
+
   .Media-figure {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+
     .Media-figure--decorated {
       border: 0.25em dotted var(--brand-color);
     }
