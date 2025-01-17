@@ -148,7 +148,7 @@
   border-top: 1px dashed oklch(from var(--brand-color) l c h / .5);
   text-align: center;
   padding: 1em 0;
-  min-width: 720px;
+  width: clamp(200px, 720px, 800px);
 
   @media (min-width: 800px) {
     & {
