@@ -1,5 +1,6 @@
 html {
   height: 100vh;
+  background-color: var(--background-color);
   color: var(--text-color);
   font-weight: var(--base-font-weight);
   font-size: var(--base-font-size);

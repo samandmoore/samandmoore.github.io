@@ -19,7 +19,10 @@
   }
 
   .Site-footer {
-    width: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -117,20 +120,27 @@
   }
 }
 
-.Icon--github {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
+.Facts {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .Footer {
   border-top: 1px dashed oklch(from var(--brand-color) l c h / .5);
   text-align: center;
   padding: 1em 0;
+  min-width: 720px;
+
+  @media (min-width: 800px) {
+    & {
+      max-width: 720px;
+    }
+  }
 }
 
-.Facts {
-  display: flex;
-  flex-flow: row wrap;
+.Icon--github {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
 }
 

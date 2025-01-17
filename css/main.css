@@ -11,7 +11,24 @@
   --base-line-height: 1.5;
   --spacing-unit: 30px;
 
+  --background-color: oklch(100% 0 0); 
   --text-color: oklch(37.15% 0 0);
   --brand-color: oklch(70.56% 0.1342 158.32);
 }
 
+::selection {
+  background-color: oklch(from var(--brand-color) l c h / .25);
+  color: oklch(from var(--text-color) l c h / 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: oklch(32% 0 0); 
+    --text-color: oklch(100% 0 0);
+  }
+
+  html {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+}
