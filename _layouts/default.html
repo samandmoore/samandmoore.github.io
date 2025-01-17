@@ -19,6 +19,11 @@
       </div>
     </header>
 
+    <nav class="Site-nav">
+      <a href="{{ "/" | prepend: site.baseurl }}" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
+      <a href="{{ '/archive.html' | prepend: site.baseurl }}">Archive</a>
+    </nav>
+
     <main class="Site-content">
       {{ content }}
     </main>
@@ -31,8 +36,6 @@
             source</a>
           /
           <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
-          /
-          <a href="{{ '/archive.html' | prepend: site.baseurl }}">Archive</a>
         </p>
       </div>
     </footer>

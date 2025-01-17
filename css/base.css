@@ -40,19 +40,21 @@ pre > code {
 
 a {
   display: inline-block;
-  border-bottom: 1px dashed oklch(from var(--brand-color) l c h / .5);
   color: var(--brand-color);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: oklch(from var(--brand-color) l c h / .75);
+  text-underline-offset: .25ex;
 
   &:visited {
-    border-bottom: 1px solid var(--brand-color);
+    text-decoration-color: var(--brand-color);
   }
 
   &:focus, &:hover {
     outline: none;
-    background-color: var(--brand-color);
     transform: rotate(-3deg);
     color: oklch(100% 0 0);
+    font-weight: bold;
   }
 }
 

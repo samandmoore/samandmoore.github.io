@@ -18,6 +18,25 @@
   .Site-header {
   }
 
+  .Site-nav {
+    background-color: oklch(from var(--background-color) l c h / .75);
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(1px);
+    width: 100%;
+    text-align: center;
+
+    a {
+      display: inline-block;
+      text-align: center;
+      margin-block: 10px;
+    }
+
+    a:not(:last-child) {
+      padding-inline-end: .75em;
+    }
+  }
+
   .Site-footer {
     width: 100%;
     display: flex;
@@ -144,3 +163,10 @@
   height: 16px;
 }
 
+.Archive-section {
+  min-width: 320px;
+
+  article {
+    margin-block-end: 30px;
+  }
+}
