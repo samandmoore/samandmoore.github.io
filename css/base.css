@@ -52,8 +52,8 @@ a {
 
   &:focus, &:hover {
     outline: none;
-    transform: rotate(-3deg);
-    color: oklch(100% 0 0);
+    transform: rotate(-2deg);
+    color: var(--text-color);
     font-weight: bold;
   }
 }
