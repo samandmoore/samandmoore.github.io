@@ -1,0 +1,144 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Resume">
+  <article class="Resume">
+    <h1>Sam Moore</h1>
+    <p class="Resume-contact">
+      Software Engineer | NYC<br />
+      <a href="mailto:sam@samandmoore.com">sam@samandmoore.com</a> |
+      <a href="https://github.com/samandmoore">GitHub</a> |
+      <a href="https://www.linkedin.com/in/samuelamoore">LinkedIn</a>
+    </p>
+
+    <section class="Resume-section">
+      <h2>Summary</h2>
+      <p>
+        Experienced software engineer with a passion for building elegant,
+        scalable solutions. Specializing in full-stack development with a focus
+        on modern web technologies and financial technology.
+      </p>
+    </section>
+
+    <section class="Resume-section">
+      <h2>Experience</h2>
+
+      <div class="Resume-job">
+        <h3>Senior Software Engineer</h3>
+        <p class="Resume-company">Betterment</p>
+        <p class="Resume-dates">2013 - Present</p>
+        <ul>
+          <li>
+            Building and maintaining personal finance tools and investment
+            platforms
+          </li>
+          <li>
+            Working with Ruby on Rails, React, and modern web technologies
+          </li>
+          <li>
+            Contributing to the development of elegant, user-friendly financial
+            applications
+          </li>
+          <li>
+            Collaborating with cross-functional teams to deliver high-quality
+            software
+          </li>
+        </ul>
+      </div>
+
+      <div class="Resume-job">
+        <h3>Software Engineer</h3>
+        <p class="Resume-company">Group Commerce</p>
+        <p class="Resume-dates">Prior to 2013</p>
+        <ul>
+          <li>Developed and maintained e-commerce and group buying platforms</li>
+          <li>Worked in a fast-paced startup environment</li>
+          <li>Built scalable web applications and APIs</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="Resume-section">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Ruby, JavaScript, TypeScript, HTML, CSS</li>
+        <li>
+          <strong>Frameworks & Tools:</strong> Ruby on Rails, React, Astro, Git
+        </li>
+        <li>
+          <strong>Practices:</strong> Agile development, Test-driven development,
+          Code review
+        </li>
+      </ul>
+    </section>
+
+    <section class="Resume-section">
+      <h2>Interests</h2>
+      <p>
+        History enthusiast, baseball fan (Go Mets!), gnome collector. Living in
+        NY with my wife Laura, dog Hazel, and kids.
+      </p>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .Resume {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .Resume h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .Resume-contact {
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .Resume-section {
+    margin-bottom: 2rem;
+  }
+
+  .Resume-section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+  }
+
+  .Resume-job {
+    margin-bottom: 1.5rem;
+  }
+
+  .Resume-job h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .Resume-company {
+    font-weight: bold;
+    margin: 0.25rem 0;
+  }
+
+  .Resume-dates {
+    color: #666;
+    font-style: italic;
+    margin: 0.25rem 0 0.5rem 0;
+  }
+
+  .Resume-section ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .Resume-section li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+</style>
