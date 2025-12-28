@@ -1,0 +1,35 @@
+@import url("reset.css") layer(reset);
+@import url("base.css") layer(base);
+@import url("components.css") layer(components);
+
+:root {
+  --base-font-family:
+    "Andika", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  --base-font-size: 18px;
+  --base-font-weight: 400;
+  --small-font-size: var(--base-font-size) * 0.875;
+
+  --base-line-height: 1.5;
+  --spacing-unit: 30px;
+
+  --background-color: oklch(100% 0 0);
+  --text-color: oklch(37.15% 0 0);
+  --brand-color: oklch(70.56% 0.1342 158.32);
+}
+
+::selection {
+  background-color: oklch(from var(--brand-color) l c h / 0.25);
+  color: oklch(from var(--text-color) l c h / 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: oklch(32% 0 0);
+    --text-color: oklch(100% 0 0);
+  }
+
+  html {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+}

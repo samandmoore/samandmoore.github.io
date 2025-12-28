@@ -1,0 +1,79 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("posts");
+  const tags = [...new Set(posts.flatMap((post) => post.data.tags || []))];
+
+  return tags.map((tag) => ({
+    params: { tag },
+    props: {
+      tag,
+      posts: posts
+        .filter((post) => post.data.tags?.includes(tag))
+        .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()),
+    },
+  }));
+}
+
+const { tag, posts } = Astro.props;
+
+const postsByYear = posts.reduce(
+  (group, post) => {
+    const year = post.data.date.getFullYear();
+    if (!group[year]) {
+      group[year] = [];
+    }
+    group[year].push(post);
+    return group;
+  },
+  {} as Record<number, typeof posts>
+);
+
+const years = Object.keys(postsByYear)
+  .map(Number)
+  .sort((a, b) => b - a);
+---
+
+<BaseLayout title={`Tagged with: ${tag}`}>
+  <h1>Tagged with: {tag}</h1>
+  <section class="Archive-section">
+    {
+      years.map((year) => (
+        <>
+          <h2>{year}</h2>
+          {postsByYear[year].map((post) => (
+            <article>
+              <h1>
+                <a href={`/posts/${post.id}`}>{post.data.title}</a>
+              </h1>
+              <time datetime={post.data.date.toISOString()}>
+                <span class="month">
+                  {post.data.date.toLocaleDateString("en-US", {
+                    month: "short",
+                  })}
+                </span>{" "}
+                <span class="day">{post.data.date.getDate()}</span>{" "}
+                <span class="year">{post.data.date.getFullYear()}</span>
+              </time>
+              {post.data.tags && post.data.tags.length > 0 && (
+                <footer>
+                  <span class="categories">
+                    posted in{" "}
+                    {post.data.tags.map((t, i) => (
+                      <>
+                        <a href={`/tags/${t}`}>{t}</a>
+                        {i < post.data.tags!.length - 1 && " "}
+                      </>
+                    ))}
+                  </span>
+                </footer>
+              )}
+            </article>
+          ))}
+        </>
+      ))
+    }
+  </section>
+</BaseLayout>

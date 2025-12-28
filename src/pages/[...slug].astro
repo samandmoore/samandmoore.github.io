@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("posts");
+
+  return posts.flatMap((post) => {
+    const legacySlug = post.data.legacy_slug;
+
+    return [
+      {
+        params: { slug: `${legacySlug}.html` },
+        props: { postId: post.id },
+      },
+      {
+        params: { slug: legacySlug },
+        props: { postId: post.id },
+      },
+    ];
+  });
+}
+
+const { postId } = Astro.props;
+
+return Astro.redirect(`/posts/${postId}/`, 301);
+---
