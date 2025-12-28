@@ -9,7 +9,12 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: var(--base-font-weight);
 }
 
@@ -24,11 +29,11 @@ pre {
 
 code,
 pre {
-  font-family: 'Menlo', 'Monaco', monospace;
+  font-family: "Menlo", "Monaco", monospace;
 }
 
 code {
-  font-size: .9em;
+  font-size: 0.9em;
   font-weight: normal;
   color: oklch(0% 0 0);
 }
@@ -43,14 +48,15 @@ a {
   color: var(--brand-color);
   text-decoration: underline;
   text-decoration-style: wavy;
-  text-decoration-color: oklch(from var(--brand-color) l c h / .75);
-  text-underline-offset: .25ex;
+  text-decoration-color: oklch(from var(--brand-color) l c h / 0.75);
+  text-underline-offset: 0.25ex;
 
   &:visited {
     text-decoration-color: var(--brand-color);
   }
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     outline: none;
     transform: rotate(-2deg);
     color: var(--text-color);

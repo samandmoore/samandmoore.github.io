@@ -1,6 +1,8 @@
 /* https://jakelazaroff.com/words/my-modern-css-reset/ */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -13,39 +15,61 @@ body {
   line-height: 1.5;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-inline-size: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
   letter-spacing: inherit;
   word-spacing: inherit;
   color: currentColor;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
 :not([class]) {
-  h1&, h2&, h3&, h4&, h5&, h6& {
+  h1&,
+  h2&,
+  h3&,
+  h4&,
+  h5&,
+  h6& {
     margin-block: 0.75em;
     line-height: 1.25;
     text-wrap: balance;
     letter-spacing: -0.05ch;
   }
 
-  p&, ol&, ul& {
+  p&,
+  ol&,
+  ul& {
     margin-block: 1em;
   }
 
-  ol&, ul& {
+  ol&,
+  ul& {
     padding-inline-start: 1.5em;
     list-style: revert;
   }
@@ -53,3 +77,4 @@ ol, ul {
   li& {
     margin-block: 0.5em;
   }
+}
