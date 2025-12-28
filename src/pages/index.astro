@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const description = "Personal website of Sam Moore, software engineer in NYC";
+---
+
+<BaseLayout>
+  <div class="Facts">
+    <div class="Facts-item">
+      <p>{description}</p>
+    </div>
+
+    <div class="Facts-item">
+      <p>
+        I occasionally write <a href="https://github.com/samandmoore">software</a
+        >.
+      </p>
+    </div>
+
+    <div class="Facts-item">
+      <p>
+        You can find me all over the internet, mostly under the name
+        <a href="https://bsky.app/profile/samandmoore.com">samandmoore</a>,
+        including my <a href="mailto:sam@samandmoore.com">email</a>.
+      </p>
+    </div>
+
+    <div class="Facts-item">
+      <p>
+        I live in <a href="https://google.com/search?q=NY">NY</a> with
+        my wife <a href="/images/laura-cienkowski.jpg">Laura</a>,
+        my dog <a href="/images/hazel.jpg">Hazel</a>, and my kiddos.
+      </p>
+    </div>
+
+    <div class="Facts-item">
+      <p>
+        I occasionally record my musings about <a href="/tags/life">life</a>,
+        <a href="/tags/software">software</a>,
+        and <a href="/archive">whatever else</a>.
+      </p>
+    </div>
+
+    <div class="Facts-item Facts-item--bottom">
+      I enjoy learning about history. I love gnomes; not sure why. I'm a Mets
+      fan and baseball enthusiast.
+    </div>
+  </div>
+</BaseLayout>

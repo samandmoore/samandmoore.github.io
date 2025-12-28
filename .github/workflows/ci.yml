@@ -9,10 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-ruby@v1
-        with:
-          ruby-version: "3.4"
-          bundler_cache: true
-      - name: Validate
-        run: |
-          bundle exec jekyll build --trace
+      - uses: jdx/mise-action@v2
+      - run: corepack enable
+      - run: pnpm install
+      - run: pnpm check
+      - run: pnpm format:check
+      - run: pnpm build
