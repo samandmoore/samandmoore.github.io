@@ -175,7 +175,7 @@
 .Resume {
   max-width: 800px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 0 1rem;
 
   h1 {
     font-size: 2.5rem;
@@ -223,7 +223,7 @@
   }
 }
 
-.Resume-company {
+.Resume-jobTitle {
   font-weight: bold;
   margin: 0.25rem 0;
 }
