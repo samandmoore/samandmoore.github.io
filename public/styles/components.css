@@ -171,3 +171,69 @@
     margin-block-end: 30px;
   }
 }
+
+.Resume {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.Resume-contact {
+  color: oklch(from var(--text-color) calc(l + 0.25) c h);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+
+  @media (prefers-color-scheme: dark) {
+    color: oklch(from var(--text-color) calc(l - 0.25) c h);
+  }
+}
+
+.Resume-section {
+  margin-bottom: 2rem;
+
+  h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--text-color);
+    padding-bottom: 0.5rem;
+  }
+
+  ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+}
+
+.Resume-job {
+  margin-bottom: 1.5rem;
+
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.Resume-jobTitle {
+  font-weight: bold;
+  margin: 0.25rem 0;
+}
+
+.Resume-dates {
+  color: oklch(from var(--text-color) calc(l + 0.25) c h);
+  font-style: italic;
+  margin: 0.25rem 0 0.5rem 0;
+
+  @media (prefers-color-scheme: dark) {
+    color: oklch(from var(--text-color) calc(l - 0.25) c h);
+  }
+}
